@@ -45,9 +45,9 @@ struct ContentView: View {
                         Button(action: {
                             self.pushView = true
                         }) {
-                            Text("Push")
+                            Text("List")
                         }
-                        NavigationLink(destination: Text("Push a view"), isActive:$pushView) {
+                        NavigationLink(destination: SwiftUIListView(), isActive:$pushView) {
                         }
                     }
             )
